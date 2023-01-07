@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Login</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="main-login">
+
+        <div class="left-login">
+            <h1>Área restrita<br>Faça login </h1>
+            <img src="assets/digital.svg" class="left-login-image" alt="digital">
+
+        </div>
+
+        <div class="right-login">
+
+            <div class="card-login">
+                <h1>Login</h1>
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Usuário">
+                    </div>
+
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                    </div>
+                        <button class="btn-login">ENTRAR</button>
+
+            </div>
+        </div>
+    
+    
+ 
+
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "admin"){
+                alert('Sucesso');
+                location.href = "pages/index.html";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
+
+
+    </div>    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
