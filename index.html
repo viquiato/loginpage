@@ -23,28 +23,31 @@
             <img src="assets/digital.svg" class="left-login-image" alt="digital">
 
         </div>
-
+<form>
         <div class="right-login">
 
             <div class="card-login">
                 <h1>Login</h1>
                     <div class="textfield">
                         <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" placeholder="Usuário">
+                        <input type="text" placeholder="Login" id="login">
                     </div>
 
                     <div class="textfield">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="Senha">
+                        <input type="password" placeholder="Senha" id="senha">
                     </div>
-                        <button class="btn-login">ENTRAR</button>
+                    <input type="submit" onclick="logar(); return false" class="btn-login"> 
+                     
+                    
 
             </div>
         </div>
     
-    
+    </form>
  
 
+   
     <script>
 
 
@@ -55,7 +58,7 @@
 
             if(login == "admin" && senha == "admin"){
                 alert('Sucesso');
-                location.href = "pages/index.html";
+                location.href = "home.html";
             }else{
                 alert('Usuario ou senha incorretos');
             }
@@ -63,7 +66,6 @@
         }
 
     </script>
-
 
     </div>    
 
